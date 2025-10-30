@@ -27,8 +27,28 @@ img{max-width:100%;display:block}
 .hero-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.8)}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.05)0%,rgba(255,255,255,1)100%);z-index:-1}
 .hero-copy .lede{color:var(--muted);max-width:62ch;margin:12px 0 18px}
-.hero-points{display:grid;gap:8px;padding:0;list-style:none;color:#1f2937}
-.hero-points i{color:var(--primary)}
+.hero-points{
+  display:grid;
+  gap:10px;
+  padding:0;
+  margin:0;
+  list-style:none;
+  color:#1f2937;
+}
+
+.hero-points li{
+  display:flex;
+  align-items:center;          /* vertically centers icon + text */
+  gap:10px;                    /* even spacing between icon and text */
+  line-height:1.4;             /* consistent text height */
+}
+
+.hero-points i{
+  color:var(--primary);
+  font-size:1.1rem;
+  flex-shrink:0;               /* keeps icons from shrinking */
+}
+
 
 /* About */
 .about-grid{display:grid;gap:28px;grid-template-columns:1fr}
