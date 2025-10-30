@@ -93,6 +93,11 @@ input:focus,textarea:focus{outline:3px solid rgba(109,40,217,.25);border-color:v
 .site-footer{border-top:1px solid var(--line);margin-top:48px;padding:18px 0;background:#fafafa;text-align:center;font-size:.95rem}
 .site-footer a{color:var(--primary);text-decoration:none}
 
+/* Add space below static page header so logo doesn't overlap content */
+.site-header.static + main {
+  padding-top: 140px;   /* adjust if your logo grows/shrinks */
+}
+
 /* Responsive */
 @media(min-width:860px){
   .about-grid{grid-template-columns:1fr 1fr;align-items:center}
