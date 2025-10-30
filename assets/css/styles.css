@@ -58,7 +58,16 @@ img{max-width:100%;display:block}
 .about{background:#e6057f}
 .about-grid{display:grid;gap:28px;grid-template-columns:1fr}
 .about-media img{border-radius:14px;box-shadow:var(--shadow-sm)}
-.about-copy h2{font-size:clamp(26px,4.5vw,36px);margin:6px 0 12px}
+.about {
+  color: #fff;              /* makes all text inside the about section white */
+}
+
+.about-copy h2,
+.about-copy p,
+.about-copy strong {
+  color: #fff;
+}
+
 
 /* Product Range */
 .range{background:#f8f9fb}
