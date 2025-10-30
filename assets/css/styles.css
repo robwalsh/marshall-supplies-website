@@ -32,26 +32,36 @@ img{max-width:100%;display:block}
   overflow: hidden;
 }
 
+/* Light, washed-out hero background */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
 .hero-bg img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.55); /* darkens bright areas slightly */
+  filter: brightness(1.35) saturate(0.7); /* brighter and less color-saturated */
+  transform: scale(1.02); /* subtle zoom to avoid hard edges */
 }
 
-/* Add subtle top-to-bottom gradient overlay */
+/* Soft white veil overlay */
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0.45) 0%,    /* darker at top behind text */
-    rgba(0, 0, 0, 0.25) 40%,
-    rgba(255, 255, 255, 0.05) 100%
+    rgba(255, 255, 255, 0.7) 0%,   /* light veil at top */
+    rgba(255, 255, 255, 0.6) 40%,
+    rgba(255, 255, 255, 0.4) 100%
   );
   z-index: -1;
 }
+
 
 .hero-copy .lede{color: color:#1f2937;max-width:62ch;margin:12px 0 18px}
 /* Bullet list with hanging indent so text lines up perfectly */
