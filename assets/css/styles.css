@@ -57,7 +57,21 @@ img{max-width:100%;display:block}
 /* About */
 .about{background:#e6057f}
 .about-grid{display:grid;gap:28px;grid-template-columns:1fr}
-.about-media img{border-radius:14px;box-shadow:var(--shadow-sm)}
+.about-media {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.about-media img:first-child {
+  transform: translateY(10%);
+}
+
+.about-media img:last-child {
+  transform: translateY(-10%);
+}
+
 .about {
   color: #fff;              /* makes all text inside the about section white */
 }
