@@ -13,56 +13,40 @@
 </head>
 <body>
   <!-- Header -->
-  <header class="site-header" id="top">
+  <header class="site-header overlay" id="top">
     <div class="container hdr">
       <a class="brand" href="#top" aria-label="Marshall Supplies">
-        <img src="assets/img/logo.png" alt="Marshall Supplies logo" class="brand-logo">
-        <span class="brand-name">Marshall Supplies</span>
+        <img src="assets/img/logo.png" alt="Marshall Supplies logo" class="brand-logo large">
       </a>
-
-      <nav class="nav" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#range">Product Range</a>
-        <a href="#service">Stock to Store</a>
-        <a href="#contact" class="btn btn-sm btn-primary">Contact Us</a>
-      </nav>
-
-      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <a href="#contact" class="btn btn-sm btn-primary contact-only">Contact Us</a>
     </div>
   </header>
 
   <main>
-    <!-- 1. HERO -->
+    <!-- HERO -->
     <section class="hero" id="home" aria-label="Intro">
       <div class="hero-bg">
-        <!-- replace hero-bg.jpg with your office/kitchen/clean space image -->
         <img src="assets/img/hero-bg.jpg" alt="" aria-hidden="true">
       </div>
       <div class="container hero-inner">
         <div class="hero-copy">
           <h1 class="display">
-            Simplifying essential<br> supplies since <span class="accent">1995</span>
+            Simplifying essential<br> supplies since 1995
           </h1>
           <p class="lede">
             Whether you’re an office, a caterer, a school or a facilities team, there are supplies you should never have to worry about.
             That’s where we come in.
           </p>
-          <div class="hero-ctas">
-            <a href="#range" class="btn btn-primary">Browse products</a>
-            <a href="#contact" class="btn btn-ghost">Get in touch</a>
-          </div>
           <ul class="hero-points" role="list">
-            <li><i class="fa-solid fa-truck-fast"></i> Next-day delivery options</li>
-            <li><i class="fa-solid fa-recycle"></i> Eco ranges & recyclables</li>
-            <li><i class="fa-solid fa-boxes-stacked"></i> Wholesale & contracts</li>
+            <li><i class="fa-solid fa-truck-fast"></i> Free delivery</li>
+            <li><i class="fa-solid fa-clipboard-check"></i> Free Stock Assessment</li>
+            <li><i class="fa-solid fa-phone"></i> Simple telephone or email ordering</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- 2. ABOUT -->
+    <!-- ABOUT -->
     <section class="about section" id="about">
       <div class="container about-grid">
         <figure class="about-media">
@@ -78,101 +62,113 @@
           <p>
             We focus on the basics so you don’t have to. Transparent pricing, attentive service, and stock continuity keep your teams moving.
           </p>
-          <a href="#contact" class="btn btn-primary">Get in touch</a>
         </div>
       </div>
     </section>
 
-    <!-- 3. PRODUCT RANGE -->
+    <!-- PRODUCT RANGE -->
     <section class="range section" id="range" aria-label="Product Range">
       <div class="container">
         <h2 class="center">Product Range</h2>
-
         <div class="cards">
-          <!-- Cleaning Chemicals -->
           <article class="card">
             <img src="assets/img/prod-chem.jpg" alt="Cleaning chemicals on a shelf">
             <div class="card-body">
               <h3>Cleaning Chemicals</h3>
               <p>Washing-up liquid, bleaches, surface & floor cleaners, degreasers, bactericidal cleaners and more.</p>
-              <a href="#contact" class="card-link">Request pricing</a>
             </div>
           </article>
-
-          <!-- Paper Products -->
           <article class="card">
             <img src="assets/img/prod-paper.jpg" alt="Paper products in a hospitality setting">
             <div class="card-body">
               <h3>Paper Products</h3>
               <p>3-ply luxury white paper towels, interfold hand towels, 24-pack toilet rolls, napkins, banquet rolls.</p>
-              <a href="#contact" class="card-link">Request pricing</a>
             </div>
           </article>
-
-          <!-- Cloths & Accessories -->
           <article class="card">
             <img src="assets/img/prod-accessories.jpg" alt="Cloths and janitorial accessories">
             <div class="card-body">
               <h3>Cloths & Accessories</h3>
               <p>Optima lavette cloths, industrial wiping rolls, mops, dispensers and janitorial accessories.</p>
-              <a href="#contact" class="card-link">Request pricing</a>
             </div>
           </article>
-
           <article class="card">
-  <img src="assets/img/prod-interfold.jpg" alt="Interfold paper hand towels">
-  <div class="card-body">
-    <h3>Interfold Hand Towels</h3>
-    <p>Soft, high-absorbency towels for hygienic, efficient hand drying.</p>
-    <a href="#contact" class="card-link">Request pricing</a>
-  </div>
-</article>
-          
+            <img src="assets/img/prod-catering.jpg" alt="Catering accessories">
+            <div class="card-body">
+              <h3>Catering Accessories</h3>
+              <p>Cutlery, napkins, trays, takeaway containers and kitchen cleaning essentials for food service teams.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/img/prod-window.jpg" alt="Window cleaning tools">
+            <div class="card-body">
+              <h3>Window Cleaning</h3>
+              <p>Professional squeegees, poles, buckets and detergents for streak-free window cleaning.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/img/prod-glassware.jpg" alt="Glassware and bar supplies">
+            <div class="card-body">
+              <h3>Glassware & Bar Supplies</h3>
+              <p>Bar glassware, polishers, sprays and cloths for spotless presentation in hospitality settings.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- 4. SERVICE CTA -->
-    <section class="service section" id="service" aria-label="Stock to Store">
-      <div class="container service-grid">
-        <div class="service-copy">
-          <h2>Get the <span class="accent">best</span> service with our <a href="#contact" class="underline">Stock to Store</a> program</h2>
-          <p>
-            Our experienced stock managers review your usage, monitor levels, and schedule replenishment—so you never run short.
-            Ideal for multi-site offices, schools, and catering operations.
-          </p>
-          <ul class="ticklist" role="list">
-            <li><i class="fa-solid fa-check"></i> Forecasted replenishment</li>
-            <li><i class="fa-solid fa-check"></i> Consolidated monthly billing</li>
-            <li><i class="fa-solid fa-check"></i> Priority delivery windows</li>
-          </ul>
-          <a href="#contact" class="btn btn-primary">Enquire about Stock to Store</a>
-        </div>
-        <figure class="service-media">
-          <img src="assets/img/service-shelf.jpg" alt="Organised shelving of cleaning supplies">
-        </figure>
+    <!-- TESTIMONIALS -->
+    <section class="testimonials section" id="testimonials" aria-label="Satisfied Clients">
+      <div class="testimonial-bg">
+        <img src="assets/img/testimonial-bg.jpg" alt="" aria-hidden="true">
       </div>
- </section>
+      <div class="container testimonials-inner">
+        <h2 class="center">Satisfied Clients</h2>
+        <div class="quotes">
+          <blockquote>
+            <p>“Marshall Supplies have made our site management effortless. Deliveries arrive on time every week.”</p>
+            <cite>— Facilities Manager, Oxford Business Park</cite>
+          </blockquote>
+          <blockquote>
+            <p>“We’ve used Marshall for years. The quality is reliable and the service is friendly and personal.”</p>
+            <cite>— Catering Director, Northshore Hospitality</cite>
+          </blockquote>
+          <blockquote>
+            <p>“They know exactly what we need before we even run out. Couldn’t recommend them enough.”</p>
+            <cite>— Cleaning Supervisor, PrimeCare Medical</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
 
-    <!-- 5. PARTNER / CONTACT -->
+    <!-- CONTACT -->
     <section class="contact section" id="contact" aria-label="Contact">
       <div class="container contact-grid">
         <div class="contact-copy">
           <h2>Partner with us</h2>
           <p>Tell us about your sites, volumes and delivery needs. We’ll build a tailored supply plan that keeps essentials covered.</p>
 
-          <div class="info">
-            <div>
-              <h4>Mailing Address</h4>
-              <p>Marshall Supplies, Unit 3A Lakeside Farm,<br>Middle Aston, Bicester, Oxon OX25 5PP</p>
+          <div class="info improved">
+            <div class="info-block">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4>Address</h4>
+                <p>Marshall Supplies, Unit 3A Lakeside Farm,<br>Middle Aston, Bicester, Oxon OX25 5PP</p>
+              </div>
             </div>
-            <div>
-              <h4>Email Address</h4>
-              <p><a href="mailto:sales@marshallsupplies.co.uk">sales@marshallsupplies.co.uk</a></p>
+            <div class="info-block">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:sales@marshallsupplies.co.uk">sales@marshallsupplies.co.uk</a></p>
+              </div>
             </div>
-            <div>
-              <h4>Phone Number</h4>
-              <p><a href="tel:+441869340700">01869 340700</a></p>
+            <div class="info-block">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:+441869340700">01869 340700</a></p>
+              </div>
             </div>
           </div>
         </div>
@@ -190,15 +186,6 @@
             <label for="company">Company</label>
             <input id="company" name="company" autocomplete="organization">
           </div>
-          <div class="field half">
-            <label for="scope">Your scope of work</label>
-            <select id="scope" name="scope">
-              <option>Office / Facilities</option>
-              <option>Catering</option>
-              <option>Cleaning Services</option>
-              <option>Education / Healthcare</option>
-            </select>
-          </div>
           <div class="field">
             <label for="message">Tell us about your needs</label>
             <textarea id="message" name="message" rows="5"></textarea>
@@ -206,20 +193,21 @@
           <button class="btn btn-primary" type="submit">Send enquiry</button>
         </form>
       </div>
+
       <footer class="site-footer">
-        <div class="container footer-inner">
-          <p>© <span id="year"></span> Marshall Supplies. All rights reserved.</p>
-          <nav class="footer-nav">
-            <a href="#about">About</a>
-            <a href="#range">Products</a>
-            <a href="#service">Stock to Store</a>
-            <a href="#contact">Contact</a>
-          </nav>
-        </div>
-      </footer>
+  <div class="container footer-inner">
+    <p>
+      © <span id="year"></span> Marshall Supplies. All rights reserved. 
+      <a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; 
+      <a href="terms.html">Terms &amp; Conditions</a>
+    </p>
+  </div>
+</footer>
+
     </section>
   </main>
 
   <script src="assets/js/script.js" defer></script>
 </body>
 </html>
+
