@@ -92,7 +92,17 @@ img{max-width:100%;display:block}
 }
 
 
-.hero-copy .lede{color: color:#111827;max-width:62ch;margin:12px 0 18px}
+.hero-copy .lede {
+  color: #111827;
+  max-width:62ch;
+  margin:12px 0 18px;
+
+  /* subtle white shadow for legibility */
+  text-shadow: 
+    0 1px 4px rgba(255, 255, 255, 0.8),
+    0 0 6px rgba(255, 255, 255, 0.6);
+}
+
 /* Bullet list with hanging indent so text lines up perfectly */
 .hero-points{
   list-style: none;
