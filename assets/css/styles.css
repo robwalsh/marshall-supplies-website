@@ -62,7 +62,7 @@ img{max-width:100%;display:block}
   overflow: hidden;
   min-height: 60vh;         /* existing */
   padding-top: 135px;       /* 👈 pushes content down below the header */
-  padding-bottom: 100px;    /* increase from 60px or similar */
+  padding-bottom: 70px;    /* increase from 60px or similar */
   display: flex;
   align-items: center;      /* centers vertically within hero */
 }
