@@ -54,7 +54,10 @@ img{max-width:100%;display:block}
 .hero {
   position: relative;
   overflow: hidden;
-  min-height: 60vh; /* ensures the hero section has visible height */
+  min-height: 60vh;         /* existing */
+  padding-top: 120px;       /* 👈 pushes content down below the header */
+  display: flex;
+  align-items: center;      /* centers vertically within hero */
 }
 
 .hero-bg {
