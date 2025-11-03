@@ -77,6 +77,14 @@ img{max-width:100%;display:block}
   transform: scale(1.02); /* subtle zoom to avoid hard edges */
 }
 
+.hero-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9);
+  opacity: 0.45; /* adjust contrast/visibility */
+}
+
 /* Soft white veil overlay */
 .hero::after {
   content: "";
