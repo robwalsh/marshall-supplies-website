@@ -58,23 +58,11 @@ img{max-width:100%;display:block}
 }
 
 .hero-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+  position: absolute; inset: 0; 
+  z-index: 0; 
   overflow: hidden;
+  pointer-events: none;         /* video won't block links */
 }
-
-.hero-bg::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.5); /* light overlay, adjust opacity */
-  z-index: 1;
-}
-
 
 .hero-bg img {
   width: 100%;
@@ -85,20 +73,24 @@ img{max-width:100%;display:block}
 }
 
 .hero-bg video {
-  width: 100%;
-  height: 100%;
+  width: 100%; height: 100%;
   object-fit: cover;
   filter: brightness(0.9);
-  opacity: 0.45; /* adjust contrast/visibility */
+  opacity: 0.55;
 }
 
 .hero-inner {
   position: relative;
-  z-index: 1; /* ensures text overlays the video */
-  color: #111; /* ensure contrast */
+  z-index: 2; /* ensures text overlays the video */
 }
 
-
+/* If you use an overlay, keep it BELOW the text */
+.hero-bg::after{
+  content:"";
+  position:absolute; inset:0;
+  background: linear-gradient( to bottom right, rgba(255,255,255,.7), rgba(255,255,255,.35) );
+  z-index: 1;                   /* overlay between video (0) and content (2) */
+}
 
 
 .hero-copy .lede {
