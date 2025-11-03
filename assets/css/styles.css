@@ -251,4 +251,18 @@ input:focus,textarea:focus{outline:3px solid rgba(109,40,217,.25);border-color:v
   }
 }
 
+@media (max-width: 768px) {
+  .site-header .hdr {
+    padding-left: 16px; /* tighter spacing for phones */
+  }
+
+  .site-header .brand {
+    margin-left: 0; /* reset extra margin if applied earlier */
+  }
+
+  .hero-inner {
+    padding-left: 16px; /* align hero text neatly with logo */
+  }
+}
+
 
