@@ -27,6 +27,12 @@ img{max-width:100%;display:block}
   padding: 18px 0;
 }
 
+
+.site-header .brand {
+  margin-left: 40px; /* adjust as needed (20–60px typical) */
+}
+
+
 .site-header .brand-logo {
   transition: width 0.3s ease, height 0.3s ease;
 }
@@ -84,6 +90,7 @@ img{max-width:100%;display:block}
 
 .hero-inner {
   position: relative;
+  padding-left: 60px;  /* moves the whole hero content right */
   z-index: 2; /* ensures text overlays the video */
 }
 
