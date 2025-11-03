@@ -234,6 +234,16 @@ input:focus,textarea:focus{outline:3px solid rgba(109,40,217,.25);border-color:v
   }
 }
 
+@media (max-width: 768px) {
+  .site-header .hdr,
+  .hero-inner,
+  .hero-copy {
+    margin-left: 0;
+    padding-left: 16px;  /* subtle mobile padding */
+  }
+}
+
+
 @media (max-width: 480px) {
   .hero {
     padding-top: 260px; /* extra space for very small screens */
