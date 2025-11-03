@@ -29,7 +29,7 @@ img{max-width:100%;display:block}
 
 
 .site-header .brand {
-  margin-left: 40px; /* adjust as needed (20–60px typical) */
+  margin-left: 60px; /* adjust as needed (20–60px typical) */
 }
 
 
@@ -90,7 +90,7 @@ img{max-width:100%;display:block}
 
 .hero-inner {
   position: relative;
-  padding-left: 60px;  /* moves the whole hero content right */
+  padding-left: 80px;  /* moves the whole hero content right */
   z-index: 2; /* ensures text overlays the video */
 }
 
