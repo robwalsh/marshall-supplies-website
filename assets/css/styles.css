@@ -85,6 +85,11 @@ img{max-width:100%;display:block}
   opacity: 0.45; /* adjust contrast/visibility */
 }
 
+.hero-inner {
+  position: relative;
+  z-index: 1; /* keeps text above the video */
+}
+
 /* Soft white veil overlay */
 .hero::after {
   content: "";
