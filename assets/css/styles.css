@@ -51,22 +51,32 @@ img{max-width:100%;display:block}
 .hdr{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
 
 /* Hero */
-.hero{position:relative;padding:clamp(80px,12vw,140px) 0}
-.hero-bg{position:absolute;inset:0;z-index:-1;overflow:hidden}
-/* Make hero background darker + overlay for text readability */
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
+.hero {
+  position: relative;
   overflow: hidden;
 }
 
-/* Light, washed-out hero background */
 .hero-bg {
   position: absolute;
-  inset: 0;
-  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
   overflow: hidden;
+}
+
+.hero-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9);
+  opacity: 0.45; /* adjust contrast/visibility */
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1; /* keeps text above the video */
 }
 
 .hero-bg img {
